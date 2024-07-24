@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="top-bar">
+          <a href="Inicio.html"><i class="material-icons">arrow_back</i></a>
+          <span>Playing</span>
+          <i class="material-icons">add</i>
+        </div>
+        <div class="img-area">
+          <img src="imges/img.jpg" alt="">
+        </div>
+        <div class="song-details">
+          <p class="name">Te Regalo el Corazón</p>
+          <p class="artist">El Gran Combo</p>
+        </div>
+    
+        <div class="progress-area">
+    
+          <div class="progress-bar">
+            <audio id="main-audio" src="songs/music0.mp3"></audio>
+          </div>
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">4:00</span>
+          </div>
+          <audio id="main-audio" src="songs/music0.mp3"></audio>
+        </div>
+    
+        <div class="controls">
+          <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+          <i id="prev" class="material-icons prev">fast_rewind</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons next">fast_forward</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+    
+        <div class="music-list">
+          <div class="header">
+            <div class="row">
+              <i class="list material-icons">queue_music</i>
+              <span>Music List</span>
+            </div>
+            <i id="close" class="material-icons">close</i>
+          </div>
+          <ul>
+           
+          <li li-index="1" onclick="clicked(this)">
+        <div class="row">
+          <span>Pasaporte</span>
+          <p>Alexander Abreu</p>
+        </div>
+        <audio class="music-1 " src="songs/music1.mp3"></audio>
+        <span id="music-1" class="audio-duration">5:38</span>
+      </li><li li-index="2" onclick="clicked(this)">
+
+        <div class="row">
+          <span>Aguacero</span>
+          <p>El gran Combo</p>
+        </div>
+        <audio class="music-2 " src="songs/music2.mp3"></audio>
+        <span id="music-2" class="audio-duration">4:12</span>
+      </li><li li-index="3" onclick="clicked(this)">
+
+        <div class="row">
+          <span> Parte de mi Vida</span>
+          <p>Bum Bum Mezclao</p>
+        </div>
+        <audio class="music-3 " src="songs/music3.mp3"></audio>
+        <span id="music-3" class="audio-duration">1:45</span>
+      </li><li li-index="4" onclick="clicked(this)">
+       
+        <div class="row">
+          <span>Sin Mentiras</span>
+          <p>Yambao Orquesta</p>
+        </div>
+        <audio class="music-4 " src="songs/music4.mp3"></audio>
+        <span id="music-4" class="audio-duration">4:50</span>
+      </li><li li-index="5" class="playing" onclick="clicked(this)">
+        
+        <div class="row">
+          <span> no me conoces</span>
+          <p>Bobby Valentin</p>
+        </div>
+        <audio class="music-5 " src="songs/music5.mp3"></audio>
+        <span id="music-5" class="audio-duration">Playing</span>
+      </li><li li-index="6" onclick="clicked(this)">
+
+        <div class="row">
+          <span>Pillo Buena Gente </span>
+          <p>Andy Montañez </p>
+        </div>
+        <audio class="music-6 " src="songs/music6.mp3"></audio>
+        <span id="music-6" class="audio-duration">1:45</span>
+      </li><li li-index="7" onclick="clicked(this)">
+      <div class="row">
+        <span>Oe bebé </span>
+        <p>Blessd x Maluma</p>
+      </div>
+      <audio class="music-7 " src="songs/music7.mp3"></audio>
+      <span id="music-7" class="audio-duration">3:06</span>
+    </li><li li-index="8" onclick="clicked(this)">
+      <div class="row">
+        <span>Luces de tecno</span>
+        <p>Feid</p>
+      </div>
+      <audio class="music-8 " src="songs/music8.mp3"></audio>
+      <span id="music-8" class="audio-duration">3:16</span>
+    </li></ul>
+
+        </div>
+    
+    
+      </div>
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
